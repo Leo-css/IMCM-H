@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mobile-vorlage {
+  width: 100vw;
+  position: absolute;
+  z-index: -9;
+  opacity: 0.5;
+  left: 0;
+  right: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(204, 43%, 93%);
+  font-size: small;
+  margin-right: 40px;
+}
+
+.card {
+  padding-top: 100px;
+  margin-left: 55px;
+}
+.header {
+  color: hsl(218, 22%, 67%);
+}
+
+.header2 {
+  color: hsl(71, 73%, 54%);
+  margin-top: 23px;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.text {
+  line-height: 27px;
+  padding-top: 20px;
+}
+
+.section2 {
+  padding-top: 51px;
+}
+.header-blue {
+  color: white;
+  font-size: 18px;
+}
+
+.subscription {
+  color: white;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+.dollar {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.permonth {
+  font-size: 15px;
+  margin-left: 17px;
+}
+
+.full-acces-text {
+  color: white;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  margin-top: 4px;
+  margin-left: 5px;
+}
+
+.section3 {
+  margin-top: 48px;
+  padding-bottom: 27px;
+}
+.button {
+  margin-top: 29px;
+  height: 50px;
+  width: 280px;
+  opacity: 0.3;
+  font-size: 18px;
+  color: white;
+  background-color: hsl(71, 73%, 54%);
+  font-family: "Karla", sans-serif;
+  border: 0;
+  border-radius: 10px;
+}
+.whyus-header {
+  color: white;
+  font-size: 18px;
+}
+
+.text-blue {
+  margin-top: 18px;
+  color: white;
+}
+
+/* desktop-desing */
+
+@media only screen and (min-width: 1000px) {
+  body {
+    display: grid;
+    place-items: center center;
+  }
+
+  .card {
+    display: grid;
+    grid-template-rows: 216fr 259fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "body des";
+    width: 37.5%;
+  }
+
+  .section1 {
+    grid-area: header;
+    margin-bottom: 0rem;
+  }
+
+  .section2 {
+    grid-area: body;
+    border-bottom-left-radius: 5.6px;
+    margin-bottom: 1.3rem;
+  }
+
+  .section3 {
+    grid-area: des;
+    border-bottom-left-radius: 0px;
+    margin-bottom: 1.3rem;
+  }
+}
